@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go/trace"
 	tracepb "google.golang.org/genproto/googleapis/devtools/cloudtrace/v2"
 )
 

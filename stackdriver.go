@@ -45,7 +45,7 @@
 //
 // This exporter supports exporting Trace Spans to Stackdriver Trace. It also
 // supports the Google "Cloud Trace" propagation format header.
-package stackdriver // import "contrib.go.opencensus.io/exporter/stackdriver"
+package stackdriver // import "github.com/donners/opencensus-go-exporter-stackdriver"
 
 import (
 	"context"
@@ -58,11 +58,11 @@ import (
 
 	metadataapi "cloud.google.com/go/compute/metadata"
 	traceapi "cloud.google.com/go/trace/apiv2"
-	"contrib.go.opencensus.io/exporter/stackdriver/monitoredresource"
-	"go.opencensus.io/resource"
-	"go.opencensus.io/stats/view"
-	"go.opencensus.io/tag"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go-exporter-stackdriver/monitoredresource"
+	"github.com/donners/opencensus-go/resource"
+	"github.com/donners/opencensus-go/stats/view"
+	"github.com/donners/opencensus-go/tag"
+	"github.com/donners/opencensus-go/trace"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 	monitoredrespb "google.golang.org/genproto/googleapis/api/monitoredres"

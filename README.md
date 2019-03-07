@@ -7,8 +7,8 @@ Provides OpenCensus exporter support for Stackdriver Monitoring and Stackdriver 
 ## Installation
 
 ```
-$ go get -u contrib.go.opencensus.io/exporter/stackdriver
+$ go get -u github.com/donners/opencensus-go-exporter-stackdriver
 ```
 
-[godoc-image]: https://godoc.org/contrib.go.opencensus.io/exporter/stackdriver?status.svg
-[godoc-url]: https://godoc.org/contrib.go.opencensus.io/exporter/stackdriver
+[godoc-image]: https://godoc.org/github.com/donners/opencensus-go-exporter-stackdriver?status.svg
+[godoc-url]: https://godoc.org/github.com/donners/opencensus-go-exporter-stackdriver

@@ -23,7 +23,7 @@ import (
 
 	tracingclient "cloud.google.com/go/trace/apiv2"
 	"github.com/golang/protobuf/proto"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go/trace"
 	"google.golang.org/api/support/bundler"
 	tracepb "google.golang.org/genproto/googleapis/devtools/cloudtrace/v2"
 )
@@ -125,7 +125,7 @@ func (e *traceExporter) uploadSpans(spans []*tracepb.Span) {
 	defer cancel()
 	ctx, span := trace.StartSpan(
 		ctx,
-		"contrib.go.opencensus.io/exporter/stackdriver.uploadSpans",
+		"github.com/donners/opencensus-go-exporter-stackdriver.uploadSpans",
 		trace.WithSampler(trace.NeverSample()),
 	)
 	defer span.End()

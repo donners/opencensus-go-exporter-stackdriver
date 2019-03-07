@@ -20,11 +20,11 @@ import (
 	"os"
 
 	"cloud.google.com/go/compute/metadata"
-	"contrib.go.opencensus.io/exporter/stackdriver"
-	"contrib.go.opencensus.io/exporter/stackdriver/propagation"
-	"go.opencensus.io/plugin/ochttp"
-	"go.opencensus.io/stats/view"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go-exporter-stackdriver"
+	"github.com/donners/opencensus-go-exporter-stackdriver/propagation"
+	"github.com/donners/opencensus-go/plugin/ochttp"
+	"github.com/donners/opencensus-go/stats/view"
+	"github.com/donners/opencensus-go/trace"
 	"google.golang.org/genproto/googleapis/api/monitoredres"
 )
 

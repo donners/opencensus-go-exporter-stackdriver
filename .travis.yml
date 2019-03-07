@@ -3,7 +3,7 @@ language: go
 go:
   - 1.11.x
 
-go_import_path: contrib.go.opencensus.io/exporter/stackdriver
+go_import_path: github.com/donners/opencensus-go-exporter-stackdriver
 
 before_script:
   - GO_FILES=$(find . -iname '*.go' | grep -v /vendor/)  # All the .go files, excluding vendor/ if any

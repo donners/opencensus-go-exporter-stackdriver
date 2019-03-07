@@ -27,7 +27,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	timestamppb "github.com/golang/protobuf/ptypes/timestamp"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go/trace"
 	monitoredrespb "google.golang.org/genproto/googleapis/api/monitoredres"
 	tracepb "google.golang.org/genproto/googleapis/devtools/cloudtrace/v2"
 	codepb "google.golang.org/genproto/googleapis/rpc/code"

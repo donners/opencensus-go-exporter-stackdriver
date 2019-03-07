@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	"contrib.go.opencensus.io/exporter/stackdriver/internal/testpb"
-	"go.opencensus.io/plugin/ochttp"
-	"go.opencensus.io/stats/view"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go-exporter-stackdriver/internal/testpb"
+	"github.com/donners/opencensus-go/plugin/ochttp"
+	"github.com/donners/opencensus-go/stats/view"
+	"github.com/donners/opencensus-go/trace"
 	"golang.org/x/net/context/ctxhttp"
 )
 

@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stackdriver // import "contrib.go.opencensus.io/exporter/stackdriver"
+package stackdriver // import "github.com/donners/opencensus-go-exporter-stackdriver"
 
 import (
 	"contrib.go.opencensus.io/resource/resourcekeys"
-	"go.opencensus.io/resource"
+	"github.com/donners/opencensus-go/resource"
 	monitoredrespb "google.golang.org/genproto/googleapis/api/monitoredres"
 )
 

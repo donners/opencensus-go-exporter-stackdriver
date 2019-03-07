@@ -1,4 +1,4 @@
-module contrib.go.opencensus.io/exporter/stackdriver
+module github.com/donners/opencensus-go-exporter-stackdriver
 
 require (
 	cloud.google.com/go v0.36.0

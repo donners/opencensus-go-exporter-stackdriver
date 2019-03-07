@@ -23,10 +23,10 @@ import (
 	"log"
 	"time"
 
-	"contrib.go.opencensus.io/exporter/stackdriver"
-	"contrib.go.opencensus.io/exporter/stackdriver/monitoredresource"
-	"go.opencensus.io/stats"
-	"go.opencensus.io/stats/view"
+	"github.com/donners/opencensus-go-exporter-stackdriver"
+	"github.com/donners/opencensus-go-exporter-stackdriver/monitoredresource"
+	"github.com/donners/opencensus-go/stats"
+	"github.com/donners/opencensus-go/stats/view"
 )
 
 // Create measures. The program will record measures for the size of

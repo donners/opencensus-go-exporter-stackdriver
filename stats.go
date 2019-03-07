@@ -26,10 +26,10 @@ import (
 	"time"
 
 	opencensus "go.opencensus.io"
-	"go.opencensus.io/stats"
-	"go.opencensus.io/stats/view"
-	"go.opencensus.io/tag"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go/stats"
+	"github.com/donners/opencensus-go/stats/view"
+	"github.com/donners/opencensus-go/tag"
+	"github.com/donners/opencensus-go/trace"
 
 	monitoring "cloud.google.com/go/monitoring/apiv3"
 	"github.com/golang/protobuf/ptypes/timestamp"
@@ -187,7 +187,7 @@ func (e *statsExporter) uploadStats(vds []*view.Data) error {
 	defer cancel()
 	ctx, span := trace.StartSpan(
 		ctx,
-		"contrib.go.opencensus.io/exporter/stackdriver.uploadStats",
+		"github.com/donners/opencensus-go-exporter-stackdriver.uploadStats",
 		trace.WithSampler(trace.NeverSample()),
 	)
 	defer span.End()

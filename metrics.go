@@ -26,8 +26,8 @@ import (
 	"path"
 
 	"github.com/golang/protobuf/ptypes/timestamp"
-	"go.opencensus.io/stats"
-	"go.opencensus.io/trace"
+	"github.com/donners/opencensus-go/stats"
+	"github.com/donners/opencensus-go/trace"
 
 	"cloud.google.com/go/monitoring/apiv3"
 	distributionpb "google.golang.org/genproto/googleapis/api/distribution"
@@ -71,7 +71,7 @@ func (se *statsExporter) handleMetricsUpload(payloads []*metricPayload) error {
 
 	ctx, span := trace.StartSpan(
 		ctx,
-		"contrib.go.opencensus.io/exporter/stackdriver.uploadMetrics",
+		"github.com/donners/opencensus-go-exporter-stackdriver.uploadMetrics",
 		trace.WithSampler(trace.NeverSample()),
 	)
 	defer span.End()

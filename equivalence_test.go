@@ -25,9 +25,9 @@ import (
 	"time"
 
 	"contrib.go.opencensus.io/exporter/ocagent"
-	"go.opencensus.io/exemplar"
-	"go.opencensus.io/stats"
-	"go.opencensus.io/stats/view"
+	"github.com/donners/opencensus-go/exemplar"
+	"github.com/donners/opencensus-go/stats"
+	"github.com/donners/opencensus-go/stats/view"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"
 
